@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+	resources :about
+	root 'about#test1'
   get 'about/test1'
   get 'main/test'
   get 'main/did', to: 'main#did'
